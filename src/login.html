@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 - 무인 보드게임 카페</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div class="login-container">
+        <header class="login-header">
+            <h1>로그인</h1>
+        </header>
+        <main class="login-form">
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="phone">휴대폰 번호</label>
+                    <input type="tel" id="phone" name="phone" placeholder="'-' 없이 숫자만 입력" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">비밀번호 (4자리)</label>
+                    <input type="password" id="password" name="password" placeholder="숫자 4자리를 입력하세요" maxlength="4" pattern="\d{4}" inputmode="numeric" required>
+                </div>
+                <button type="submit" class="submit-btn">로그인</button>
+            </form>
+        </main>
+        <footer class="login-footer">
+            <a href="index.html" class="back-btn">처음으로 돌아가기</a>
+        </footer>
+    </div>
+    
+    <script src="js/login.js" type="module"></script>
+</body>
+</html>
+

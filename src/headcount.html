@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인원수 선택 - 무인 보드게임 카페</title>
+    <link rel="stylesheet" href="css/headcount.css">
+</head>
+<body>
+    <div class="headcount-container">
+        <header class="headcount-header">
+            <h1>이용하실 인원수를 선택해주세요.</h1>
+        </header>
+
+        <!-- ▼▼▼ main 영역의 구조를 새롭게 변경합니다 ▼▼▼ -->
+        <main class="headcount-menu">
+            <div class="counter-wrapper">
+                <button class="control-btn" id="decreaseBtn" disabled>-</button>
+                <div class="count-display">
+                    <span id="countValue">1</span>
+                    <span>명</span>
+                </div>
+                <button class="control-btn" id="increaseBtn">+</button>
+            </div>
+        </main>
+        <!-- ▲▲▲ main 영역의 구조를 새롭게 변경합니다 ▲▲▲ -->
+
+        <footer class="headcount-footer">
+            <!-- 1명이 기본 선택이므로 'disabled' 속성을 제거합니다 -->
+            <button id="confirmBtn">선택 완료</button>
+        </footer>
+    </div>
+    <script src="js/headcount.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,130 @@
+/* 기본 스타일 */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Malgun Gothic', sans-serif;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headcount-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 450px;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* 헤더 */
+.headcount-header {
+    padding: 40px 30px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+.headcount-header h1 {
+    font-size: 1.8em;
+    color: #333;
+    margin: 0;
+}
+
+/* 카운터 UI 스타일 */
+.headcount-menu {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.counter-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; /* 버튼과 원 사이의 간격 */
+}
+
+/* 중앙 원형 디스플레이 */
+.count-display {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 5px solid #007bff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #007bff;
+}
+
+.count-display #countValue {
+    font-size: 5em; /* 숫자 크기 */
+    font-weight: bold;
+    line-height: 1;
+}
+
+.count-display span:last-child {
+    font-size: 1.5em; /* '명' 텍스트 크기 */
+    margin-top: 5px;
+}
+
+/* +/- 컨트롤 버튼 */
+.control-btn {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    font-size: 3em;
+    font-weight: 300;
+    color: #555;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.control-btn:hover {
+    background-color: #e0e0e0;
+}
+
+/* 비활성화된 버튼 스타일 */
+.control-btn:disabled {
+    background-color: #f9f9f9;
+    color: #ccc;
+    border-color: #eee;
+    cursor: not-allowed;
+}
+
+/* 하단 완료 버튼 */
+.headcount-footer {
+    padding: 20px;
+    border-top: 1px solid #eee;
+}
+
+#confirmBtn {
+    width: 100%;
+    padding: 20px;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#confirmBtn:hover {
+    background-color: #0056b3;
+}
+
+#confirmBtn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}

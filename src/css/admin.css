@@ -1,0 +1,103 @@
+/* 기본 스타일 */
+body {
+    font-family: 'Malgun Gothic', sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 20px;
+}
+
+.admin-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* 헤더 */
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.admin-header h1 { margin: 0; font-size: 1.8em; }
+
+.logout-btn {
+    padding: 8px 16px;
+    font-size: 0.9em;
+    color: #fff;
+    background-color: #dc3545;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+.logout-btn:hover { background-color: #c82333; }
+
+/* 게임 추가 폼 */
+.add-form-section {
+    padding: 30px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.add-form-section h2 { margin: 0 0 20px 0; }
+
+.add-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+.add-form input, .add-form textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* 패딩 포함 */
+}
+.add-form textarea {
+    grid-column: 1 / -1; /* 2칸 모두 차지 */
+    height: 80px;
+    resize: vertical;
+}
+.add-form button {
+    grid-column: 1 / -1; /* 2칸 모두 차지 */
+    padding: 15px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.add-form button:hover { background-color: #0056b3; }
+
+/* 게임 목록 */
+.game-list-section {
+    padding: 30px;
+}
+.game-list-section h2 { margin: 0 0 20px 0; }
+
+.game-list-admin {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+}
+.game-item-admin {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.game-item-admin:hover {
+    background-color: #ffebee;
+    border-color: #dc3545;
+}
+.game-item-admin h3 { margin: 0 0 5px 0; }
+.game-item-admin p { margin: 0; font-size: 0.9em; color: #555; }

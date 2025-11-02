@@ -1,0 +1,133 @@
+/* 기본 스타일 */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Malgun Gothic', sans-serif;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.payment-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 450px;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* 헤더 */
+.payment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 25px;
+    border-bottom: 1px solid #e0e0e0;
+    flex-shrink: 0;
+}
+.payment-header h1 { font-size: 1.8em; color: #333; margin: 0; }
+
+.cancel-btn {
+    padding: 8px 16px;
+    font-size: 0.9em;
+    color: #fff;
+    background-color: #dc3545;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+.cancel-btn:hover { background-color: #c82333; }
+
+/* 주문 내역 */
+.payment-details {
+    padding: 25px;
+    overflow-y: auto;
+    flex-shrink: 0;
+}
+.payment-details h2 {
+    font-size: 1.4em;
+    color: #333;
+    margin: 0 0 15px 0;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+}
+
+.order-summary {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 150px; /* 주문 내역 스크롤 */
+    overflow-y: auto;
+}
+.order-summary li {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1em;
+    color: #555;
+    padding: 10px 0;
+}
+.order-summary li .price { font-weight: bold; color: #000; }
+
+/* 총 결제 금액 */
+.total-amount {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #007bff;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 2px solid #007bff;
+}
+
+/* QR 코드 섹션 */
+.payment-qr-section {
+    flex-grow: 1; /* 남은 공간을 모두 차지 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-top: 1px solid #e0e0e0;
+}
+.payment-qr-section h3 {
+    font-size: 1.2em;
+    text-align: center;
+    color: #333;
+    margin: 0 0 20px 0;
+}
+
+.qr-code-display {
+    width: 220px;
+    height: 220px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+.qr-code-display img {
+    width: 100%;
+    height: 100%;
+}
+.qr-code-display p {
+    font-size: 1em;
+    color: #777;
+}
+
+.qr-message {
+    margin-top: 20px;
+    font-size: 1.1em;
+    color: #007bff;
+    font-weight: bold;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>보드게임 대여 - 무인 보드게임 카페</title>
+    <link rel="stylesheet" href="css/rent.css">
+</head>
+<body>
+    <div class="rent-container">
+        <header class="rent-header">
+            <h1>보드게임 목록</h1>
+            <a href="main.html" class="back-btn">뒤로가기</a>
+        </header>
+
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="보드게임 이름 검색...">
+            <button id="searchButton">검색</button>
+        </div>
+
+        <main class="boardgame-list" id="boardgameList"></main>
+    </div>
+
+    <script src="js/rent.js" type="module"></script>
+</body>
+</html>

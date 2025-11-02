@@ -1,0 +1,153 @@
+/* 전체 화면 스타일 설정 */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Malgun Gothic', sans-serif;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 회원가입 전체를 감싸는 컨테이너 */
+.signup-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 450px;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* 상단 제목 부분 */
+.signup-header {
+    padding: 30px 20px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+.signup-header h1 {
+    font-size: 2.2em;
+    color: #333;
+    margin: 0;
+}
+
+/* 입력 폼 영역 */
+.signup-form {
+    flex-grow: 1;
+    padding: 30px;
+    overflow-y: auto;
+}
+
+.input-group {
+    margin-bottom: 25px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1em;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+/* 입력창과 버튼을 감싸는 래퍼 스타일 */
+.input-wrapper {
+    display: flex;
+    gap: 10px; /* 입력창과 버튼 사이의 간격 */
+}
+
+.input-wrapper input {
+    flex-grow: 1; /* 입력창이 남는 공간을 모두 차지하도록 */
+}
+
+/* 인증 관련 버튼 공통 스타일 */
+.verify-btn {
+    padding: 0 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #6c757d; /* 회색 계열 버튼 */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    flex-shrink: 0; /* 버튼 크기가 줄어들지 않도록 */
+    transition: background-color 0.3s;
+}
+
+.verify-btn:hover {
+    background-color: #5a6268;
+}
+
+/* 인증번호 확인 버튼은 다른 색상으로 강조 */
+.verify-btn.confirm {
+    background-color: #007bff;
+}
+.verify-btn.confirm:hover {
+    background-color: #0056b3;
+}
+
+/* 비활성화된 버튼 스타일 */
+.verify-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* 유효성 검사 메시지 스타일 */
+.message {
+    margin-top: 8px;
+    font-size: 0.9em;
+    min-height: 1em; /* 메시지 표시 공간을 미리 확보하여 레이아웃이 밀리는 것을 방지 */
+}
+.message.success {
+    color: #28a745; /* 성공 (초록색) */
+}
+.message.error {
+    color: #dc3545; /* 에러 (빨간색) */
+}
+
+/* '가입하기' 버튼 */
+.submit-btn {
+    width: 100%;
+    padding: 20px;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+/* 하단 '돌아가기' 버튼 영역 */
+.signup-footer {
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #eee;
+}
+
+.back-btn {
+    font-size: 1.1em;
+    color: #555;
+    text-decoration: none;
+}
+
+.back-btn:hover {
+    text-decoration: underline;
+}

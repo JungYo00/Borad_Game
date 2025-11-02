@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR 결제 - 무인 보드게임 카페</title>
+    <link rel="stylesheet" href="css/payment.css">
+</head>
+<body>
+    <div class="payment-container">
+        <header class="payment-header">
+            <h1>QR 결제</h1>
+            <a href="main.html" class="cancel-btn">결제 취소</a>
+        </header>
+
+        <main class="payment-details">
+            <h2>주문 내역</h2>
+            <ul class="order-summary" id="orderSummary">
+                <!-- js/payment.js가 이 목록을 동적으로 채웁니다 -->
+            </ul>
+            <div class="total-amount">
+                <span>총 결제 금액</span>
+                <span id="totalPrice">0원</span>
+            </div>
+        </main>
+
+        <footer class="payment-qr-section">
+            <h3>앱으로 QR 코드를 스캔하여 결제해주세요</h3>
+            <div class="qr-code-display" id="qrCodeDisplay">
+                <!-- js/payment.js가 여기에 QR 코드를 생성합니다 -->
+                <p>QR 코드 생성 중...</p>
+            </div>
+            <p class="qr-message" id="qrMessage">결제를 기다리고 있습니다...</p>
+        </footer>
+    </div>
+    <script src="js/payment.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>관리자 모드 - 보드게임 관리</title>
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+    <div class="admin-container">
+        <header class="admin-header">
+            <h1>보드게임 관리</h1>
+            <a href="index.html" class="logout-btn">로그아웃</a>
+        </header>
+
+        <section class="add-form-section">
+            <h2>새 보드게임 추가</h2>
+            <form id="addGameForm" class="add-form">
+                <input type="text" id="gameName" placeholder="보드게임 이름" required>
+                <input type="text" id="gamePlayers" placeholder="인원수 (예: 2-4인)">
+                <input type="text" id="gameDifficulty" placeholder="난이도 (예: 쉬움)">
+                <input type="text" id="gameImage" placeholder="이미지 URL">
+                <textarea id="gameDescription" placeholder="게임 설명"></textarea>
+                <button type="submit">추가하기</button>
+            </form>
+        </section>
+
+        <section class="game-list-section">
+            <h2>보드게임 목록 (클릭하여 삭제)</h2>
+            <div id="gameListAdmin" class="game-list-admin">
+                </div>
+        </section>
+    </div>
+    <script src="js/admin.js" type="module"></script>
+</body>
+</html>
